@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rem,
+        .px,
+        .vh-vw,
+        .em {
+            margin-bottom: 2px;
+            background-color: lightgreen;
+        }
+
+        .px {
+            /* this is the default size */
+            /* font-size: 16px; */
+
+            font-size: 25px;
+        }
+
+        /* 1rem = 16px (default pixel of text in html) */
+        .rem {
+            height: 20rem;
+            width: 20rem;
+            font-size: 3rem;
+        }
+
+        /* how much portion of screen is blocked by the div is tell by the viewport */
+        .vh-vw {
+            /* 20% of browser screen height */
+            height: 20vh;
+            /* 50% of browser screen width */
+            width: 50vh;
+            font-size: 2rem;
+        }
+
+        /* % always refer to there parent element */
+        .gparent {
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+        }
+
+        .parent {
+            height: 50%;
+            width: 50%;
+            background-color: lightcoral;
+        }
+
+        .child {
+            height: 50%;
+            width: 50%;
+            background-color: lightcyan;
+        }
+
+        /* em always refer to current font size which will change the width and height of element */
+        /* em is related to the current font size */
+        .em {
+            font-size: 16px;
+            height: 10em;
+            width: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="px">Pixel unit</div>
+    <!-- <div class="rem">Rem unit</div> -->
+    <!-- <div class="vh-vw">VH-VW unit</div> -->
+    <div class="em">em unit</div>
+
+    <div class="gparent">
+        <div class="parent">
+            <div class="child">Percentage</div>
+        </div>
+    </div>
+</body>
+
+</html>
