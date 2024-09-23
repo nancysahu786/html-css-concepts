@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            border: dashed;
+            text-align: center;
+        }
+
+        .parent {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 202);
+            position: absolute;
+            width: 90vh;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .box1{
+            background-color: lightblue;
+        }
+        .box2{
+            background-color: lightcoral;
+            /* your browser will treat you that you are occupying your original space */
+            /* it will change or always relative to the current position */
+            position: relative;
+            /* it will push you down from your original position */
+            /* top:4rem; */
+
+            /* bottom: 5rem; */
+
+            /* it will push you left from original position and when left right both there so it will choose left */
+            /* left:5rem; */
+            /* right: 5rem; */
+        }
+        .box3{
+            background-color: lightgray;
+            /* by default -> browser will remove you from the current page. and next element will occupy your space */
+            /* you will place above the later element */
+            position: absolute;
+
+            /* left:2rem; */
+            /* bottom: 2rem;
+            top:22rem;
+            right: 2rem; */
+        }
+        .box4{
+            background-color: red;
+            /* opacity: 0.2; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position - Absolute,Relative</h1>
+
+    <div class="parent">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+
+</html>
+
+<!-- original position -> position left corner of the element -->
+ <!-- 
+    relative
+    * browser treats the element if it is still occupy the original position
+    * without left,right,bottom and left element remain in it's original position
+
+    priorities
+    * right have less priorities then left
+    * top have more prority then bottom.
+ -->
+
+ <!-- absolute
+   browser will remove you from the current page. and next element will occupy your space */
+            /* you will place above the later element
+
+    priorities
+    * right have less priorities then left
+    * top have more prority then bottom.
+
+ -->
+
+ <!-- positions example
+    * Relative: link, cards
+    * Absolute: dropdown
+    * Fixed: nav
+ -->
+

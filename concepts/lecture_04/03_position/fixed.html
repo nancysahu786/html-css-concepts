@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            border: dashed;
+            text-align: center;
+        }
+
+        .parent {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 202);
+            /* position: absolute; */
+            width: 90vh;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .box1{
+            background-color: lightblue;
+        }
+        .box2{
+            background-color: lightcoral;
+            
+        }
+        .box3{
+            background-color: lightgray;
+          
+        }
+        .box4{
+            background-color: red;
+            /* opacity: 0.2; */
+        }
+        nav{
+            background-color: yellow;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position - Fixed</h1>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="parent">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorem quidem sequi assumenda. Nobis ipsam laudantium nesciunt dignissimos voluptas non ex minus odio quis, ipsa architecto illo, delectus voluptatum? Aut esse, inventore numquam non provident a, nobis magni officiis harum quidem voluptatibus itaque aperiam vel placeat fugit assumenda! Itaque, possimus.</p>
+</body>
+
+</html>
+
+ <!-- position -> fixed -->
+ <!-- 
+   * it is fixed on the viewport -> like absolute next element is going take your place 
+   * when you put fixed it will take area of content only so give width: 100% 
+   * takes top and left from origin of the page-->
