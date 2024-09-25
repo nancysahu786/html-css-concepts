@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            border: dashed;
+            
+        }
+
+        .parent {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 202);
+            /* position: relative; */
+        }
+        .parent2 {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 2);
+            /* position: relative; */
+        }
+        .box1{
+            background-color: lightblue;
+            
+        }
+        .box2{
+            background-color: yellowgreen;
+           
+        }
+        .box3{
+            background-color: lightgray;
+          
+        }
+        .box4{
+            background-color: red;
+            /* opacity: 0.2; */
+        }
+        .parent{
+            position: relative;
+            z-index: 1;
+        }
+        .box2{
+            position: fixed;
+            top:2rem;
+            left:3rem;
+            z-index: -2000;
+        }
+        .parent2>.box2{
+            background-color: rgb(255, 122, 204);
+            left: 4rem;
+            top:5rem;
+/* z-index: 10000; */
+        }
+        .parent2{
+            position: relative;
+            z-index: 4;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero praesentium vitae soluta impedit qui exercitationem totam quis culpa sit. Quod assumenda aperiam quos vitae? Necessitatibus qui repellat non? Maxime asperiores corporis minima facilis labore obcaecati repellendus autem nam, quasi commodi aut animi possimus id explicabo molestiae. Molestias nemo cupiditate est?</p>
+    <div class="parent">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+
+    <div class="parent2">
+        <div class="box box1">Box4</div>
+        <div class="box box2">Box5</div>
+        <div class="box box3">Box6</div>
+        <div class="box box4">Box7</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur id repellat, qui illum commodi iure hic illo sint maiores! Temporibus doloremque cumque corporis culpa! Atque, repudiandae! Esse, harum quam enim amet quae a ducimus reprehenderit est, earum blanditiis ullam architecto vero ratione excepturi, aliquam alias maiores sequi ea? Amet, laudantium neque. Obcaecati perspiciatis, fuga, suscipit incidunt itaque optio magni est magnam corporis quod eum voluptas ducimus aliquid quae. Nemo, facilis inventore odio neque consectetur optio consequuntur eos doloremque facere debitis eum quas veritatis dicta, quos vel ut obcaecati architecto et quia amet quisquam ullam! Repellendus mollitia, enim esse illum autem ex nam soluta commodi recusandae, animi necessitatibus consectetur id aperiam nulla sequi magni modi maiores. Commodi nemo animi dicta, debitis fugit totam nostrum quas sunt vitae cupiditate veniam ad voluptas qui ullam illum adipisci veritatis doloribus, impedit excepturi, explicabo fuga pariatur nobis praesentium. Soluta ipsam labore iusto rerum quibusdam expedita natus officiis nesciunt quas impedit, et distinctio obcaecati eius amet reprehenderit, incidunt doloremque architecto voluptatem sequi modi ad molestias! Quae delectus, laudantium temporibus ex deserunt tempora. Ipsum accusamus fuga nihil, vero accusantium similique soluta ipsa. Possimus autem nihil repudiandae sunt corporis vero ea, nesciunt cupiditate. Suscipit ex illo facere?</p>
+
+</body>
+</html>
