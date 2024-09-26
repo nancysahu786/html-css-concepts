@@ -17,12 +17,14 @@ header{
     /* position: fixed; */
     height: 70vh;
     /* background-color: blueviolet; */
-    background-image: url('./happy-chef-with-fresh-food-free-vector.jpg');
+    background-image: url('./pexels-janetrangdoan-1099680.jpg');
 
     background-size: cover;
 
     background-position: center;
     background-attachment: fixed;
+    opacity: 0.9;
+    position: relative;
     
     
 }
@@ -30,6 +32,11 @@ header{
     padding-top: 100px;
     padding-left: 100px;
 }
+.nav{
+    margin: 0;
+    padding: 0;
+}
+
 .btn{
     display: inline-block;
   color: white;
@@ -53,4 +60,28 @@ header{
 .btn-empty:hover{
     background-color: #f63854;
     color: white;
+}
+
+.white-anchors{
+    color: black;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.nav-line:last-child{
+    margin-right: 2rem;
+}
+.nav-line{
+    /* here if parent viewport width is decrease then there child elements hight and width also decrease */
+    font-size: 120%;
+    margin-top: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid transparent;
+}
+.nav-line:hover{
+    border-color: #f63854;
 }
