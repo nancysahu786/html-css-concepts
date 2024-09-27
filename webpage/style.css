@@ -71,9 +71,10 @@ header{
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    margin-right: 5rem;
 }
 .nav-line:last-child{
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 .nav-line{
     /* here if parent viewport width is decrease then there child elements hight and width also decrease */
